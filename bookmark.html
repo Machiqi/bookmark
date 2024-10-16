@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+</head>
+<body>
+    <h1>Bookmark Manager</h1>
+    <form id="bookmarkForm">
+        <input type="hidden" id="bookmarkId" />
+        <input type="text" id="title" placeholder="Website Title" required>
+        <input type="url" id="url" placeholder="Website URL" required>
+        <button type="submit">Add Bookmark</button>
+        <button type="button" id="cancelEdit" style="display:none;">Cancel Edit</button>
+    </form>
+    <ul id="bookmarkList"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="bookmark.js"></script>
+</body>
+</html>
